@@ -5,6 +5,20 @@
 * Author:     Ibrar Ayoub
 *Description: This plugin display the available space for the registration in the event list display in the admin panel.
 */
+require 'plugin-update-checker-master/plugin-update-checker.php';
+$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+	'https://github.com/manager-wiseTech/AvailableSpaceForRegistration/',
+	__FILE__,
+	'event-expresso-available-space-for-registration-addon'
+);
+
+//Set the branch that contains the stable release.
+$myUpdateChecker->setBranch('main');
+
+//Optional: If you're using a private repository, specify the access token like this:
+$myUpdateChecker->setAuthentication('your-token-here');
+
+
  if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')   
          $url = "https://";   
     else  
