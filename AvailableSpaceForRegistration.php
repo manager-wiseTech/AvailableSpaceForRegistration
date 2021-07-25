@@ -1,7 +1,7 @@
 <?php
 /*
 *Plugin Name: Available space For Registration
-*Version:     1.1.0
+*Version:     1.1.1
 * Author:     Ibrar Ayoub
 *Description: This plugin display the available space for the registration in the event list display in the admin panel.
 */
